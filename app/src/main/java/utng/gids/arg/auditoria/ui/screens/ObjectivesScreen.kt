@@ -33,7 +33,8 @@ fun ObjectivesScreen(
                     IconButton(onClick = onBack) {
                         Icon(Icons.AutoMirrored.Rounded.ArrowBack, contentDescription = "Back")
                     }
-                }
+                },
+                windowInsets = TopAppBarDefaults.windowInsets
             )
         }
     ) { innerPadding ->
