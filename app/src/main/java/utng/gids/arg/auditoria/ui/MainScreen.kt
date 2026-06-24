@@ -1,5 +1,6 @@
 package utng.gids.arg.auditoria.ui
 
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -31,6 +32,7 @@ fun MainScreen() {
     val currentRoute = backStack.last()
 
     Scaffold(
+        contentWindowInsets = WindowInsets(0, 0, 0, 0), // Scaffold will not handle insets, screens will
         bottomBar = {
             if (currentRoute !is Route.Objectives && currentRoute !is Route.Methodology && currentRoute !is Route.ClauseDetails) {
                 NavigationBar {
