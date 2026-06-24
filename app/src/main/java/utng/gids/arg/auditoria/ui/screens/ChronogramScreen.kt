@@ -37,7 +37,8 @@ fun ChronogramScreen() {
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.tertiaryContainer,
                     titleContentColor = MaterialTheme.colorScheme.onTertiaryContainer
-                )
+                ),
+                windowInsets = TopAppBarDefaults.windowInsets
             )
         }
     ) { innerPadding ->

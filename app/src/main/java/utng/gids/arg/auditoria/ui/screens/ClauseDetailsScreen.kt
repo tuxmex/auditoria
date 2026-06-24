@@ -19,7 +19,6 @@ import utng.gids.arg.auditoria.data.entity.ChecklistItem
 import utng.gids.arg.auditoria.data.entity.ComplianceStatus
 import utng.gids.arg.auditoria.ui.MainViewModel
 import utng.gids.arg.auditoria.ui.theme.AuditoriaTheme
-
 import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -41,7 +40,8 @@ fun ClauseDetailsScreen(
                     IconButton(onClick = onBack) {
                         Icon(Icons.AutoMirrored.Rounded.ArrowBack, contentDescription = "Back")
                     }
-                }
+                },
+                windowInsets = TopAppBarDefaults.windowInsets
             )
         }
     ) { innerPadding ->
